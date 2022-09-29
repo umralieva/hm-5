@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo list</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper wrapper2">
+      <input
+        type="text"
+        name="todo-list-task-text"
+        id="todo-list-task-text"
+        placeholder="Сохраните свою задачу..."/>
+      <button class="add_delete" id="todo-list-task-add-btn">Добавить</button>
+      <button class="add_delete" id="todo-list-task-delete-btn">Удалить все</button>
+      <select class="add_delete"
+        name="todo-list-task-filter"
+        id="todo-list-task-filter">
+        <option value="0">All</option>
+        <option value="1">Completed</option>
+        <option value="2">Uncompleted</option>
+      </select>
+      <ul class="todo-list" id="todo-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
